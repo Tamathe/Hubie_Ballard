@@ -1993,7 +1993,14 @@ ul {
 /* ========================================
    CV Embedded Viewer
    ======================================== */
+.cv-section .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 .cv-viewer {
+    width: 100%;
     border-radius: 16px;
     overflow: hidden;
     box-shadow: var(--shadow-xl);
@@ -2023,14 +2030,18 @@ ul {
 
 .cv-embed {
     width: 100%;
-    height: 800px;
+    height: 80vh;
     border: none;
     display: block;
 }
 
 @media (max-width: 768px) {
+    .cv-section .container {
+        padding: 0 16px;
+    }
+
     .cv-embed {
-        height: 500px;
+        height: 70vh;
     }
 
     .cv-toolbar {
